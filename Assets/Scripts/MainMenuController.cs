@@ -13,7 +13,7 @@ public class MainMenuController : MonoBehaviour
     public void ShowCredits()
     {
         // Credits ekranýna geçiþ için benzer bir iþlem
-        SceneManager.LoadScene("CreditsScene"); // Yapýmcýlarýn olduðu sahne ismi
+        SceneManager.LoadScene("Creditts"); // Yapýmcýlarýn olduðu sahne ismi
     }
 
     // Exit butonu için fonksiyon
@@ -21,5 +21,9 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit(); // Oyunu kapatýr
         Debug.Log("Game is exiting"); // Editor'da çýkýþý gözlemlemek için (Oyun kapatýlýnca bu çalýþmaz)
+    }
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("menu"); // Ana menü sahnesinin ismi
     }
 }
